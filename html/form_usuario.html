@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Tela de Cadastro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="https://i.imgur.com/7ZFSvUg.png" width="300"/>
+        </header>
+
+        <div id="titulo">
+            <h4>CADASTRO DE USUÁRIOS</h4>
+        </div>
+        <div id="form">
+            <h5>Informe os dados para cadastro:</h5>
+            <form action="../php/cadastrar/cadastrar_usuario.php" method="post">
+                <table>
+                    <tr>
+                        <td>Nome:</td>
+                        <td><input type="text" name="nome" 
+                            autofocus required></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Senha:</td>
+                        <td><input type="password" name="senha"></td>
+                    </tr>
+                </table><br> 
+                <input type="submit" name="submit" value="Enviar">
+                <input type="reset" value="Limpar"><br><br>
+                <input type="button" value="Voltar" 
+                onclick="location.href='../index.html'">
+            </form>   
+        </div>
+    </body>
+</html>
